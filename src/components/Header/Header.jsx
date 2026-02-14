@@ -6,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
         <div className={styles.container}>
             <div className={styles.logo}>
-                <NavLink to='/' className={({isActive}) => isActive ? styles.active : styles.link}>Cinema Vault</NavLink>
+                <NavLink to='/'>Cinema Vault</NavLink>
             </div>
             <nav className={styles.nav}>
                 <NavLink to='/' className={({isActive}) => isActive ? styles.active : styles.link}>Home</NavLink>

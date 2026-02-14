@@ -7,12 +7,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header>
+      <Header/>
+      <main className='container'>
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/favorites' element={<FavoritesPage/>}/>
         </Routes>
-      </Header>
+      </main>
     </BrowserRouter>
   )
 }
