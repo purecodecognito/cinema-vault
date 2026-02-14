@@ -1,0 +1,32 @@
+:root {
+  /* Цвета */
+  --bg-primary: #121212;     /* Основной фон */
+  --bg-secondary: #1f1f1f;   /* Фон карточек, хедера */
+  --bg-card: #252525;        /* Фон внутри элементов */
+  
+  --text-primary: #ffffff;   /* Основной текст (белый) */
+  --text-secondary: #b3b3b3; /* Вторичный текст (серый) */
+  
+  --accent: #e50914;         /* Акцент (красный, как Netflix) */
+  --accent-hover: #f40612;   /* Акцент при наведении */
+  
+  /* Типографика */
+  --font-main: 'Inter', sans-serif; /* Шрифт (Inter - стандарт индустрии) */
+  
+  /* Отступы и тени */
+  --radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
