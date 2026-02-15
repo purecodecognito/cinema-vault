@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
 import FavoritesPage from './pages/FavoritesPage/FavoritePage';
+import MovieDetailPage from './pages/MovieDetailPage/MovieDetailPage';
 import { useState } from 'react';
 
 
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage isLiked={isLiked} handleLike={handleLike}/>}/>
           <Route path='/favorites' element={<FavoritesPage isLiked={isLiked} handleLike={handleLike}/>}/>
+          <Route path='/movie/:id' element={<MovieDetailPage/>}/>
         </Routes>
       </main>
     </BrowserRouter>

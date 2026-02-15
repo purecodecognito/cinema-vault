@@ -1,0 +1,58 @@
+.page {
+  padding: 20px 0;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.backBtn:hover {
+  color: var(--text-primary);
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+}
+
+.image {
+  max-width: 300px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* Адаптив: на мобильном картинка сверху, текст снизу */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
