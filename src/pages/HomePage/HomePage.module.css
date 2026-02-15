@@ -1,8 +1,10 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Ограничиваем ширину колонки от 200 до 300px */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px)); 
   gap: 20px;
-  list-style: none; /* Убираем точки, если использовали ul */
+  justify-content: center; /* Центрируем карточки, если их мало */
+  list-style: none;
   padding: 0;
   margin: 0;
 }

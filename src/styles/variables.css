@@ -17,13 +17,14 @@
   --radius: 8px;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+html {
+    scrollbar-gutter: stable;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scrollbar-gutter: auto;
-  overflow:hidden;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   min-height: 100vh;
+  overflow-y: scroll 
 }
 
 a {
