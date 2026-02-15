@@ -23,7 +23,7 @@ function App() {
       <main className='container'>
         <Routes>
           <Route path='/' element={<HomePage isLiked={isLiked} handleLike={handleLike}/>}/>
-          <Route path='/favorites' element={<FavoritesPage/>}/>
+          <Route path='/favorites' element={<FavoritesPage isLiked={isLiked}/>}/>
         </Routes>
       </main>
     </BrowserRouter>
