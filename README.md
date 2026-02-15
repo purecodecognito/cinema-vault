@@ -85,7 +85,3 @@ npm run build
 | The Dark Knight | 2008 | 9.0 |
 | Interstellar | 2014 | 8.6 |
 | Dune | 2021 | 8.0 |
-
-## 📄 Лицензия
-
-MIT
