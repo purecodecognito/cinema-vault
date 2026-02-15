@@ -8,6 +8,7 @@
   height: 100%; /* Карточка занимает всю высоту ячейки */
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card:hover {
@@ -40,4 +41,40 @@
   justify-content: space-between;
   color: var(--text-secondary);
   font-size: 14px;
+}
+
+.likebtn {
+  position: absolute;
+  background-color: transparent;
+  border: transparent;
+  top: 5px;
+  right: 5px;
+  transition:  0.2s ease-in-out;
+  -webkit-transition:  0.2s ease-in-out;
+  -moz-transition:  0.2s ease-in-out;
+  -ms-transition:  0.2s ease-in-out;
+  -o-transition:  0.2s ease-in-out;
+}
+
+.likebtn:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+
+.iconbtn {
+  fill: rgb(110, 110, 110);
+}
+
+.liked {
+  transition: 0.2s ease-in-out;
+  color: black;
+  fill:#ff0000;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
 }
